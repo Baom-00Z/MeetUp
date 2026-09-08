@@ -49,16 +49,16 @@ export const useMediasoupStore = defineStore("mediasoupstore", () => {
     /**
  * @typedef {Object} SendTransportState
  * @property {boolean} isInit
- * @property {import("mediasoup-client/lib/types").Transport | null} producerTransport
- * @property {Map<string, import("mediasoup-client/lib/types").Producer>} producers
+ * @property {import("mediasoup-client/types").Transport | null} producerTransport
+ * @property {Map<string, import("mediasoup-client/types").Producer>} producers
  * @property {any} sendParams
  */
 
     /**
      * @typedef {Object} ReceiveTransportState
      * @property {boolean} isInit
-     * @property {import("mediasoup-client/lib/types").Transport | null} consumerTransport
-     * @property {Map<string, import("mediasoup-client/lib/types").Consumer>} consumers
+     * @property {import("mediasoup-client/types").Transport | null} consumerTransport
+     * @property {Map<string, import("mediasoup-client/types").Consumer>} consumers
      * @property {any} receiveParams
      */
 

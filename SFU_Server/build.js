@@ -10,4 +10,4 @@ await esbuild.build({
     outfile: "./public/modules/mediasoupclient.min.js",
 });
 
-console.log("Build hoàn tất: public/modules/mediasoupclient.min.js");
+console.log("Build completed: public/modules/mediasoupclient.min.js");

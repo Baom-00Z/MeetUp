@@ -38,7 +38,7 @@ onUnmounted(() => {
 })
 
 const createMeeting = async () => {
-    axios.post(`http://127.0.0.1:8000/api/meetings-now`)
+    axios.post(`https://be.test/api/meetings-now`)
         .then( async (res) => {
             router.push(`/meeting/${res.data.id}`);
         })

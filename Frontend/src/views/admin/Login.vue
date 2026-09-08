@@ -34,7 +34,7 @@ const login = () => {
             console.log(axios.defaults.headers.common[
                 "Authorization"
             ], "login");
-            
+
 
             router.push("/");
 
