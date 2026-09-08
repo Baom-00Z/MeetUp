@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Google Sans Flex", Roboto, Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+img {
+    display: block;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+}
+

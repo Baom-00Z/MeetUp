@@ -1,0 +1,30 @@
+{
+  "name": "sfu_server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "async-mutex": "^0.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "esbuild": "^0.25.11",
+    "express": "^5.1.0",
+    "httpolyglot": "^0.1.2",
+    "mediasoup": "^3.19.4",
+    "mediasoup-client": "^3.18.1",
+    "pidusage": "^4.0.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

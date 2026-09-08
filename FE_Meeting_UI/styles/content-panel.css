@@ -1,0 +1,18 @@
+.content-panel {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 12px 0 12px;
+    display: flex;
+    min-height: 0;
+}
+
+.video-main {
+    flex: 0;
+    transition: flex 0.8s;
+    overflow: hidden;
+}
+
+.video-main.present {
+    flex: 7;
+}
