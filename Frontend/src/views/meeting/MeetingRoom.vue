@@ -3,34 +3,33 @@
 import { nextTick, onMounted, ref, watch } from "vue";
 
 // Event JS
-import { initEvents } from "@/assets/meeting/meeting_room/event";
+import { initEvents } from "@/assets/meeting/meeting-room/event";
 
 // Component: Content
-import Video from '@/components/meeting/meeting_room/common/Video.vue';
-import VideoShareScreen from "@/components/meeting/meeting_room/common/VideoShareScreen.vue";
-import TimeStart from '@/components/meeting/meeting_room/content/TimeStart.vue';
-import Title from '@/components/meeting/meeting_room/content/Title.vue';
-import Audio from "@/components/meeting/meeting_room/common/Audio.vue";
-import EnumerateDevice from "@/components/meeting/meeting_room/common/EnumerateDevice.vue";
-import Chat from "@/components/meeting/meeting_room/content/Chat.vue";
-import User from "@/components/meeting/meeting_room/content/User.vue";
-
+import Video from '@/components/meeting/meeting-room/common/Video.vue';
+import VideoShareScreen from "@/components/meeting/meeting-room/common/VideoShareScreen.vue";
+import TimeStart from '@/components/meeting/meeting-room/content/TimeStart.vue';
+import Title from '@/components/meeting/meeting-room/content/Title.vue';
+import Audio from "@/components/meeting/meeting-room/common/Audio.vue";
+import EnumerateDevice from "@/components/meeting/meeting-room/common/EnumerateDevice.vue";
+import Chat from "@/components/meeting/meeting-room/content/Chat.vue";
+import User from "@/components/meeting/meeting-room/content/User.vue";
 
 // Component: Icon
-import IconVerticalLine from '@/components/meeting/meeting_room/icons/IconVerticalLine.vue';
-import IconXDelete from "@/components/meeting/meeting_room/icons/IconXDelete.vue";
+import IconVerticalLine from '@/components/meeting/meeting-room/icons/IconVerticalLine.vue';
+import IconXDelete from "@/components/meeting/meeting-room/icons/IconXDelete.vue";
 
-// Component: Button
-import ButtonSlideShow from '@/components/meeting/meeting_room/control/ButtonSlideShow.vue';
-import ButtonEmoji from '@/components/meeting/meeting_room/control/ButtonEmoji.vue';
-import ButtonCaption from '@/components/meeting/meeting_room/control/ButtonCaption.vue';
-import ButtonHandUp from '@/components/meeting/meeting_room/control/ButtonHandUp.vue';
-import ButtonMore from '@/components/meeting/meeting_room/control/ButtonMore.vue';
-import ButtonCancelCall from '@/components/meeting/meeting_room/control/ButtonCancelCall.vue';
-import ButtonUsers from '@/components/meeting/meeting_room/control/ButtonUsers.vue';
-import ButtonChat from '@/components/meeting/meeting_room/control/ButtonChat.vue';
-import ButtonCamera from '@/components/meeting/meeting_room/control/ButtonCamera.vue';
-import ButtonMicro from '@/components/meeting/meeting_room/control/ButtonMicro.vue';
+// Component: Controls
+import ButtonSlideShow from '@/components/meeting/meeting-room/controls/ButtonSlideShow.vue';
+import ButtonEmoji from '@/components/meeting/meeting-room/controls/ButtonEmoji.vue';
+import ButtonCaption from '@/components/meeting/meeting-room/controls/ButtonCaption.vue';
+import ButtonHandUp from '@/components/meeting/meeting-room/controls/ButtonHandUp.vue';
+import ButtonMore from '@/components/meeting/meeting-room/controls/ButtonMore.vue';
+import ButtonCancelCall from '@/components/meeting/meeting-room/controls/ButtonCancelCall.vue';
+import ButtonUsers from '@/components/meeting/meeting-room/controls/ButtonUsers.vue';
+import ButtonChat from '@/components/meeting/meeting-room/controls/ButtonChat.vue';
+import ButtonCamera from '@/components/meeting/meeting-room/controls/ButtonCamera.vue';
+import ButtonMicro from '@/components/meeting/meeting-room/controls/ButtonMicro.vue';
 
 
 import { useMeetingStore } from "@/stores/meeting/useMeetingStore";
@@ -45,7 +44,6 @@ import { useSocketStore } from "@/stores/meeting/useSocketStore";
  * @property {boolean} micro
  * @property {{ camera?: MediaStream, microphone?: MediaStream }} streams
  */
-
 /** @type {{ user: User }} */
 
 const meetingStore = useMeetingStore();
@@ -131,7 +129,7 @@ watch(
 </script>
 
 <template>
-    <section class="main-meeting" style="background-color: #131314;">
+    <div class="main-meeting">
 
         <div class="content-panel">
 
@@ -208,37 +206,23 @@ watch(
                 <Title></Title>
             </div>
             <div class="device-control-section">
-
                 <EnumerateDevice></EnumerateDevice>
-
                 <ButtonMicro></ButtonMicro>
-
                 <ButtonCamera></ButtonCamera>
-
                 <ButtonSlideShow></ButtonSlideShow>
-
                 <ButtonEmoji></ButtonEmoji>
-
                 <ButtonCaption></ButtonCaption>
-
                 <ButtonHandUp></ButtonHandUp>
-
                 <ButtonMore></ButtonMore>
-
                 <ButtonCancelCall></ButtonCancelCall>
-
             </div>
             <div class="user-control-section">
-                
                 <ButtonUsers @turn="handleUserClick" :isUser="isUser"></ButtonUsers>
-
                 <ButtonChat @turn="handleChatClick" :isChat="isChat"></ButtonChat>
-
-                
             </div>
         </div>
 
-    </section>
+    </div>
 </template>
 
-<style src="@/assets/meeting/meeting_room/styles/general.css"></style>
+<style src="@/assets/meeting/meeting-room/styles/general.css"></style>

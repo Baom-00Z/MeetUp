@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import axios from "@/service/api/admin/setting.js";
+import axios from "@/services/api/admin/setting.js";
 
 import { useRouter } from "vue-router";
 

@@ -1,5 +1,5 @@
 <script setup>
-import axios from "@/service/api/admin/setting.js";
+import axios from "@/services/api/admin/setting.js";
 import { onMounted, ref, watch } from "vue";
 
 const rooms = ref([]);

@@ -1,0 +1,9 @@
+.main-meeting .meeting-stage {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 12px 0 12px;
+    display: flex;
+    min-height: 0;
+    overflow: hidden;
+}

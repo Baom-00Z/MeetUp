@@ -18,3 +18,4 @@ Route::middleware('auth:sanctum')->group(function () {
 
 Route::post('/login', [AuthClientController::class, 'login']);
 Route::post('/register', [AuthClientController::class, 'register']);
+    

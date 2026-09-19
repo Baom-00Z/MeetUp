@@ -18,14 +18,11 @@ return [
     'paths' => [
         'api/*',
         'sanctum/csrf-cookie',
-        'meetings/*',       // Thêm dòng này
-        'meetings/{id}',    // Hoặc cụ thể hơn (tùy route của bạn)
-        // Nếu có nhiều route web cần CORS thì thêm tiếp
     ],
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['http://localhost:5173'],
 
     'allowed_origins_patterns' => [],
 

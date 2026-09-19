@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import axios from "@/service/api/admin/setting.js";
+import axios from "@/services/api/admin/setting.js";
 
 
 import View_MeetingRoom from "../views/meeting/MeetingRoom.vue";
@@ -9,7 +9,7 @@ import View_Room from "@/components/admin/content/Room.vue";
 import View_Role from "@/components/admin/content/Role.vue";
 import View_User from "@/components/admin/content/User.vue";
 import View_Login from "@/views/admin/Login.vue";
-import View_CreateMeeting from "../views/meeting/CreateMeetingRoom.vue";
+import View_CreateMeeting from "../views/meeting/CreateMeeting.vue/index.js";
 import View_Register from "@/views/admin/Register.vue";
 import View_404 from "@/views/admin/404.vue";
 import View_Leave from "@/views/admin/Leave.vue";

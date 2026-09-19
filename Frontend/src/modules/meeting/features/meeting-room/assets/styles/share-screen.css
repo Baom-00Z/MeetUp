@@ -1,0 +1,13 @@
+.main-meeting .screen-share {
+    flex: 0;
+    transition: flex 0.8s;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 12px;
+    transition: flex 0.8s;
+}
+
+.main-meeting .screen-share.present {
+    flex: 7;
+    padding: 12px;
+}

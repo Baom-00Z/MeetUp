@@ -1,0 +1,95 @@
+.main-meeting .meeting-sidebar {
+    flex: 0;
+    height: 100%;
+    width: 100%;
+    transition: flex 0.5s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-meeting .meeting-sidebar.show {
+    flex: 2;
+    margin-left: 12px;
+    padding: 12px;
+}
+
+.main-meeting .meeting-sidebar.show .meeting-sidebar__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+}
+
+.main-meeting .meeting-sidebar .meeting-sidebar__content {
+    visibility: hidden;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: white;
+    transition: background-color 1s;
+}
+
+.main-meeting .meeting-sidebar.show .meeting-sidebar__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+}
+
+.main-meeting .meeting-sidebar.show .meeting-sidebar__header p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.main-meeting .meeting-sidebar.show .meeting-sidebar__header .meeting-sidebar__translate-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: auto;
+    border-radius: 12px;
+    border: 1px solid rgb(228, 228, 228);
+    background-color: rgb(243, 243, 243);
+}
+
+.main-meeting .meeting-sidebar.show .meeting-sidebar__header .meeting-sidebar__translate-btns button {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.main-meeting .meeting-sidebar.show .meeting-sidebar__header .meeting-sidebar__translate-btns button:hover {
+    opacity: 0.5;
+}
+
+.main-meeting .meeting-sidebar.show .meeting-sidebar__header .meeting-sidebar__translate-btns button.chose {
+    background-color: rgb(32, 91, 243);
+    color: white;
+}
+
+.main-meeting .meeting-sidebar.show .meeting-sidebar__header .meeting-sidebar__close-btn {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-meeting .meeting-sidebar.show .meeting-sidebar__header .meeting-sidebar__close-btn:hover {
+    background-color: rgb(206, 206, 206);
+}

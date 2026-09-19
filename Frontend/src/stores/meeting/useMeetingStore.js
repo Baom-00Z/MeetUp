@@ -185,23 +185,6 @@ export const useMeetingStore = defineStore("meetingstore", () => {
             });
     });
 
-
-    /**
-     * @typedef {Object} Users
-     * @property {string|null} id
-     * @property {string} socketId
-     * @property {string} name
-     * @property {boolean} isSpeaking
-     * @property {number|null} emoji
-     * @property {boolean} raiseHand
-     * @property {boolean} camera
-     * @property {boolean} micro
-     * @property {Record<'camera'|'micro', MediaStream|null>} [streams]
-     * @property {Record<'camera'|'micro', string|null>} [producers]  
-     * @property {Record<'camera'|'micro', string|null>} [consumers]  
-     */
-
-    /** @type {import('vue').Ref<Users[]>} */
     const users = ref([]);
 
     const joinMeeting = async () => {
@@ -610,7 +593,7 @@ export const useMeetingStore = defineStore("meetingstore", () => {
 
 
     const sendMessage = (message) => {
-        const time = getTimeHM();
+        const time = new Date().now();
         socketStore.sendMessage(message, time, user.value.lang);
 
         messages.value.push({
