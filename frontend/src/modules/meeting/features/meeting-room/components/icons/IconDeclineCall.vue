@@ -1,3 +1,3 @@
 <template>
-    <img src="@/assets/meeting/meeting_room/icons/call-decline-icon.svg" alt="">
+    <img src="../../assets/icons/call-decline-icon.svg" alt="">
 </template>

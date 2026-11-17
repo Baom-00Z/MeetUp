@@ -1,5 +1,5 @@
 <script setup>
-import Tooltip from '../common/Tooltip.vue';
+import Tooltip from '../ui/Tooltip.vue';
 import IconEmoji from '../icons/IconEmoji.vue';
 </script>
 

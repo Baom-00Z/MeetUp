@@ -1,6 +1,6 @@
 <script setup>
 import IconUsers from '../icons/IconUsers.vue';
-import Tooltip from '../common/Tooltip.vue';
+import Tooltip from '../ui/Tooltip.vue';
 
 const emit = defineEmits(['turn']);
 

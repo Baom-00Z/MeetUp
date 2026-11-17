@@ -1,7 +1,7 @@
 <script setup>
 import { useMeetingStore } from '@/stores/meeting/useMeetingStore.js';
 import IconSlideShow from '../icons/IconSlideShow.vue';
-import Tooltip from '../common/Tooltip.vue';
+import Tooltip from '../ui/Tooltip.vue';
 import { useSocketStore } from '@/stores/meeting/useSocketStore.js';
 import { storeToRefs } from 'pinia';
 

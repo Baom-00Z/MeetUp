@@ -7,15 +7,15 @@
   justify-content: center;
 }
 
-.main-meeting .emoji-section.show-emoji {
+.main-meeting .emoji-section.show {
   height: 60px;
 }
 
-.main-meeting .emoji-section .emoji {
+.main-meeting .emoji-section .emoji-section__list {
   display: none;
 }
 
-.main-meeting .emoji-section.show-emoji .emoji {
+.main-meeting .emoji-section.show .emoji-section__list {
   padding-left: 10px;
   padding-right: 10px;
   height: 40px;
@@ -26,7 +26,7 @@
   align-items: center;
 }
 
-.main-meeting .emoji-section.show-emoji .emoji button {
+.main-meeting .emoji-section.show .emoji-section__list button {
   height: 100%;
   width: 40px;
   border-radius: 50%;
@@ -38,10 +38,10 @@
   cursor: pointer;
 }
 
-.main-meeting .emoji-section.show-emoji .emoji button:hover {
+.main-meeting .emoji-section.show .emoji-section__list button:hover {
   background-color: #4e4e4e;
 }
 
-.main-meeting .emoji-section.show-emoji .emoji button span {
+.main-meeting .emoji-section.show .emoji-section__list button span {
   font-size: 25px;
 }

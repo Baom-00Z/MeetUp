@@ -1,35 +1,30 @@
 .main-meeting .caption-section {
-    overflow: hidden;
-    height: 0;
-    transition: height 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.main-meeting .caption-section.show-caption {
-    height: 150px;
-    overflow: visible;
+.main-meeting .caption-section.show {
+  height: 150px;
+  overflow: visible;
 }
 
-.select-langs {
+.main-meeting .caption-section .caption-section__select-langs {
   height: 40px;
   width: 200px;
   padding-left: 28px;
-}
-
-.cs-select {
   position: relative;
-  width: 220px;
-  font-family: system-ui, sans-serif;
 }
 
-.cs-btn {
+.caption-section__select-lang-btn {
   width: 100%;
   height: 44px;
   padding: 0 14px;
   border-radius: 16px;
-  border: 1px solid rgba(148,163,184,.25);
+  border: 1px solid rgba(148, 163, 184, .25);
   background: #020617;
   color: #e5e7eb;
   display: flex;
@@ -39,28 +34,28 @@
   transition: border .25s, box-shadow .25s;
 }
 
-.cs-select.open .cs-btn {
+.caption-section__select-lang-btn {
   border-color: #6366f1;
-  box-shadow: 0 0 0 4px rgba(99,102,241,.2);
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, .2);
 }
 
-.cs-arrow {
+.caption-section__select-lang-arrow {
   transition: transform .25s;
   opacity: .8;
 }
 
-.cs-select.open .cs-arrow {
+.caption-section__select-lang-btn.open .caption-section__select-lang-arrow {
   transform: rotate(180deg);
 }
 
-.cs-list {
+.caption-section__list-langs {
   position: absolute;
   left: 0;
   right: 0;
   bottom: calc(100% + 10px);
   background: #020617;
   border-radius: 18px;
-  border: 1px solid rgba(148,163,184,.2);
+  border: 1px solid rgba(148, 163, 184, .2);
   list-style: none;
   margin: 0;
   padding: 6px 0;
@@ -73,45 +68,45 @@
   overflow-y: auto;
 }
 
-.cs-list::-webkit-scrollbar {
+.caption-section__list-langs::-webkit-scrollbar {
   display: none;
 }
 
-.cs-select.open .cs-list {
+.caption-section__select-lang-btn.open .caption-section__list-langs {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
 
-.cs-item {
+.caption-section__item-lang {
   padding: 12px 16px;
   cursor: pointer;
   color: #e5e7eb;
   transition: background 0.2s;
 }
 
-.cs-item:hover {
-  background: rgba(99,102,241,.15);
+.caption-section__item-lang:hover {
+  background: rgba(99, 102, 241, .15);
 }
 
-.cs-item.active::after {
+.caption-section__item-lang.active::after {
   content: "✓";
   float: right;
   color: #6366f1;
   font-weight: 700;
 }
 
-.caption-section .caption {
+.caption-section__messages {
   flex: 1;
   padding-left: 20%;
   padding-right: 20%;
   overflow-y: auto;
 }
 
-.caption-section .caption::-webkit-scrollbar {
+.caption-section__messages::-webkit-scrollbar {
   display: none;
 }
 
-.caption-section .caption .text {
+.caption-section__messages .caption-section__message {
   font-size: medium;
 }

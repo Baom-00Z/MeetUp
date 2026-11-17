@@ -2,7 +2,7 @@
 import IconMicro from '../icons/IconMicro.vue';
 import IconMicroSlash from '../icons/IconMicroSlash.vue';
 import IconArrowUp from '../icons/IconArrowUp.vue';
-import Tooltip from '../common/Tooltip.vue';
+import Tooltip from '../ui/Tooltip.vue';
 import { useMeetingStore } from '@/stores/meeting/useMeetingStore.js';
 import { storeToRefs } from 'pinia';
 

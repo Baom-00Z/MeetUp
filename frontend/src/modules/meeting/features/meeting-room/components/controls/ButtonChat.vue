@@ -1,6 +1,6 @@
 <script setup>
 import IconChat from '../icons/IconChat.vue';
-import Tooltip from '../common/Tooltip.vue';
+import Tooltip from '../ui/Tooltip.vue';
 
 const emit = defineEmits(['turn']);
 

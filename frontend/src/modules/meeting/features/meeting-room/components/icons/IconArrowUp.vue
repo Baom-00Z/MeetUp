@@ -1,3 +1,3 @@
 <template>
-    <img src="@/assets/meeting/meeting_room/icons/up-arrow-icon.svg" alt="">
+    <img src="../../assets/icons/up-arrow-icon.svg" alt="">
 </template>
